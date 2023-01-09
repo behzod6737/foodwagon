@@ -1,0 +1,42 @@
+.header {
+    @include flex;
+    justify-content: space-between;
+    gap: 3em;
+    
+}
+.header__logo {
+
+}
+.header__menu {
+    
+    
+    
+}
+.menu {
+    @include flex;
+    justify-content: center;
+    gap: .2em;
+
+}
+.menu__item {
+    @include list-unstyled;
+}
+.menu__link {
+    @include a;
+}
+.menu__active {
+       &::before{
+        background-image: url('/assets/img/map-marker-alt.png');
+        background-repeat: no-repeat;
+    
+
+    }
+}
+.header__left {
+}
+.search__form {
+    @include a
+}
+.login__form {
+    @include a
+}
