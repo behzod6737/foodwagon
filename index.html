@@ -5,23 +5,53 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <title>foodwagon</title>
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
   <header class="header container">
-      <img src="assets/img/Logo.png" alt="#" class="header__logo">
-      <ul class="header__menu menu">
-        <li class="menu__item"><a href="" class="menu__link">Deliver to:</a></li>
-        <li class="menu__item menu__active"><a href="" class="menu__link ">Current Location</a></li>
-        <li class="menu__item"><a href="" class="menu__link">Mohammadpur Bus Stand, Dhaka</a></li>
-      </ul>
-      <div class="header__left">
-        <a href="index.html" class="search__form">Search Food</a>
-        <a href="index.html" class="login__form">Login</a>
-      </div>
+    <img src="assets/img/Logo.png" alt="#" class="header__logo">
+    <ul class="header__menu menu">
+      <li class="menu__item"><a href="" class="menu__link">Deliver to:</a></li>
+      <img src="/assets/img/map-marker-alt.png" alt="#" class="map-marker-alt">
+      <li class="menu__item "><a href="" class="menu__link menu__active">
+          Current Location</a></li>
+      <li class="menu__item"><a href="" class="menu__link">Mohammadpur Bus Stand, Dhaka</a></li>
+    </ul>
+    <div class="header__left">
+      <a href="index.html" class="search__form">Search Food</a>
+      <a href="index.html" class="login__form">Login</a>
+    </div>
   </header>
+  <main class="main">
+    <div class="container">
+      <div class="main__flex-box">
+        <div class="main__left-wrapper">
+          <h1 class="hero__desc">Are you starving?</h1>
+          <p class="hero__p">Within a few clicks, find meals that are accessible near you</p>
+          <div class="hero__form">
+            <div class="form__delivery-box">
+              <a href="index.html" class="delivery__info">Delivery</a>
+              <a href="index.html" class="pickup__info">Pickup</a>
+            </div>
+            <div class="form__bottom">
+              <input type="text" placeholder="Enter Your Address" class="hero__input">
+              <button class="hero__botton">Find Food</button>
+            </div>
+          </div>
+        </div>
+        <img src="assets/img/Image Base.png" alt="#" class="hero__img">
+      </div>
+    </div>
+  </main>
+   <section>
+    <div class="div"></div>
+  </section>
 </body>
 
 </html>

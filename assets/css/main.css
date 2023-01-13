@@ -328,7 +328,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  font-family: "Arial", sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: #fff;
 }
 
@@ -340,7 +340,7 @@ img {
 /*CONTAINER*/
 .container {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 auto;
 }
@@ -363,7 +363,13 @@ img {
   align-items: center;
   gap: 2em;
   justify-content: space-between;
-  gap: 3em;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+}
+
+.header__menu {
+  padding: 0;
+  margin: 0;
 }
 
 .menu {
@@ -371,8 +377,13 @@ img {
   justify-content: center;
   align-items: center;
   gap: 2em;
-  justify-content: center;
-  gap: 0.2em;
+  justify-content: space-between;
+  gap: 0.3em;
+  padding-right: 6em;
+}
+
+.map-marker-alt {
+  padding: 0.6em;
 }
 
 .menu__item {
@@ -384,19 +395,191 @@ img {
 .menu__link {
   text-decoration: none;
   color: black;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  color: #424242;
 }
 
-.menu__active::before {
-  background-image: url("/assets/img/map-marker-alt.png");
-  background-repeat: no-repeat;
+.menu__active {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
 }
 
 .search__form {
   text-decoration: none;
   color: black;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 100%;
+  color: #424242;
+}
+
+.search__form::before {
+  content: url("/assets/img/Search.png");
+  vertical-align: middle;
+  padding-right: 0.7em;
 }
 
 .login__form {
   text-decoration: none;
   color: black;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  color: orange;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+  padding: 0.5em 1em;
+}
+
+.login__form::before {
+  content: url("/assets/img/user.png");
+  vertical-align: middle;
+  padding-right: 0.7em;
+}
+
+.header__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.main {
+  background-image: url("/assets/img/Group 1 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-height: 661px;
+  height: 100%;
+}
+
+.main__flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  justify-content: space-between;
+  gap: 8em;
+}
+
+.hero__desc {
+  font-weight: 700;
+  font-size: 88px;
+  line-height: 100%;
+  color: white;
+}
+
+.hero__p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 120%;
+  color: #504f4f;
+  margin-top: 0;
+}
+
+.hero__form {
+  background-color: white;
+  width: 856px;
+  height: 194.44px;
+  border-radius: 10px;
+  margin-top: 32px;
+}
+
+.form__delivery-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  justify-content: flex-start;
+  margin-left: 2em;
+}
+
+.delivery__info {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  text-decoration: none;
+  color: black;
+  color: orange;
+  background: rgba(241, 114, 40, 0.1);
+  border-radius: 8px;
+  padding: 10px 24px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.delivery__info::before {
+  content: url("/assets/img/Icon.png");
+  margin-right: 0.5em;
+}
+
+.pickup__info {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  color: #424242;
+  border-radius: 8px;
+  padding: 10px 24px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-decoration: none;
+  color: black;
+}
+.pickup__info::before {
+  content: url("/assets/img/Icon (1).png");
+  margin-right: 0.5em;
+}
+
+.form__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  justify-content: start;
+  gap: 1em;
+  margin-left: 2em;
+}
+
+.hero__input {
+  width: 593px;
+  height: 49px;
+  padding: 2em;
+  background-color: #f5f5f5;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+
+.hero__botton {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  color: white;
+  padding: 21px 2.5em;
+  background: linear-gradient(95.71deg, #ff7a7a -39.64%, #f75900 135.31%);
+  border-radius: 8px;
+  border-color: transparent;
+}
+.hero__botton:hover {
+  transition: all 800ms ease-in-out;
+  background: orange;
+}
+.hero__botton::before {
+  content: url("/assets/img/Icon (3).png");
+  padding-right: 0.3em;
+}
+
+input[placeholder] {
+  background-image: url("/assets/img/Icon (2).png");
+  background-position: 6px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  padding-left: 2em;
+}
+
+.hero__img {
+  position: relative;
+  top: 13.2em;
 }/*# sourceMappingURL=main.css.map */
