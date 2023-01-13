@@ -582,4 +582,10 @@ input[placeholder] {
 .hero__img {
   position: relative;
   top: 13.2em;
+}
+
+.div {
+  width: 30vw;
+  height: 30vh;
+  background-color: #424242;
 }/*# sourceMappingURL=main.css.map */
